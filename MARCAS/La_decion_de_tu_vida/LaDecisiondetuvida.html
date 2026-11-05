@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>La decisión de tu vida</title>
+    <style>
+        /* Estilos básicos para centrar y darle forma de caja */
+        body { font-family: sans-serif; text-align: center; background: #222; color: white; padding: 20px; }
+        .pantalla { border: 2px solid white; padding: 20px; margin: 20px auto; max-width: 400px; background: #111; }
+        .imagen { font-size: 80px; margin: 10px 0; }
+        button { font-size: 18px; padding: 10px 20px; margin: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>La decisión de tu vida</h1>
+    <p>¿Cual es la comida preferida de peña?</p>
+
+   
+    <div class="pantalla">
+        <div id="foto" class="imagen">✉️</div>
+        <h2 id="mensaje">¿Que eligirias en tu ultima comida?</h2>
+    </div>
+
+    <!-- Los 3 botones -->
+    <button onclick="jugar(1)">cordero</button>
+    <button onclick="jugar(2)">pizza</button>
+    <button onclick="jugar(3)">cocido</button>
+
+    <script>
+        
+        const sobreGanador = Math.floor(Math.random() * 3) + 1;
+
+        function jugar(sobreElegido) {
+            const foto = document.getElementById("foto");
+            const mensaje = document.getElementById("mensaje");
+
+            if (sobreElegido === sobreGanador) {
+                foto.innerText = "🐏"; 
+                mensaje.innerText = "¡PREMIO! Has ganado.";
+                alert("¡Música Buena! 🎵🎉");
+            } else {
+                foto.innerText = "💀"; 
+                mensaje.innerText = "Castigo: jaja as fallado" + (sobreElegido === 1 || (sobreElegido === 2 && sobreGanador !== 2) ? "1" : "2");
+                alert("¡Sonido Malo! 🎺❌");
+            }
+        }
+    </script>
+</body>
+</html

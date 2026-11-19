@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NetCast Cisco | Our Team</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <span>NetCat</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="devices.html">Devices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <!-- Device Catalog -->
+    <main id="devices" class="container mb-5">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Hardware</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1: Routers -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-header bg-dark text-white text-center py-3"style="background: linear-gradient(to bottom, #28a745, #1e7e34);">
+              <h5 class="card-title mb-0">Routers (ISR / ASR)</h5>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <p class="card-text text-secondary">Interconnect different networks and determine the optimal path for data traffic using protocols like OSPF and BGP.</p>
+              <ul class="list-unstyled small text-muted mb-4">
+                <li><strong>Models:</strong> Cisco 4000 ISR, Catalyst 8000</li>
+                <li><strong>Usage:</strong> WAN links and branch offices</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Switches -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-header bg-dark text-white text-center py-3"style="background: linear-gradient(to bottom, #28a745, #1e7e34);">
+              <h5 class="card-title mb-0">Catalyst Switches</h5>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <p class="card-text text-secondary">Connect end devices within a Local Area Network (LAN) by forwarding frames using MAC addresses and VLANs.</p>
+              <ul class="list-unstyled small text-muted mb-4">
+                <li><strong>Models:</strong> Catalyst 9200, 9300, Nexus</li>
+                <li><strong>Usage:</strong> Access, distribution, and core layers</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Firewalls -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-header bg-dark text-white text-center py-3"style="background: linear-gradient(to bottom, #28a745, #1e7e34);">
+              <h5 class="card-title mb-0">Firepower Firewalls</h5>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <p class="card-text text-secondary">Inspect incoming and outgoing traffic by enforcing security policies, Intrusion Prevention (IPS), and VPN tunnels.</p>
+              <ul class="list-unstyled small text-muted mb-4">
+                <li><strong>Models:</strong> Secure Firewall 1000, 3100</li>
+                <li><strong>Usage:</strong> Advanced threat defense</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Wireless -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-header bg-dark text-white text-center py-3"style="background: linear-gradient(to bottom, #28a745, #1e7e34);">
+              <h5 class="card-title mb-0">Access Points</h5>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <p class="card-text text-secondary">Extend wired networks with high-density Wi-Fi connectivity supporting Wi-Fi 6E and Wi-Fi 7 standards.</p>
+              <ul class="list-unstyled small text-muted mb-4">
+                <li><strong>Models:</strong> Catalyst 9100, Cisco Meraki</li>
+                <li><strong>Usage:</strong> Enterprise mobile coverage</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Comparison Table -->
+      <section id="comparison" class="mt-5 pt-4">
+        <h3 class="fw-bold mb-3">Specification</h3>
+        <div class="table-responsive bg-white rounded shadow-sm p-3">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-dark">
+              <tr>
+                <th>Device</th>
+                <th>Primary OSI Layer</th>
+                <th>Addressing Identifier</th>
+                <th>Operating System</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="fw-semibold">Catalyst Switch</td>
+                <td>Layer 2 (Data Link)</td>
+                <td>MAC Address</td>
+                <td>Cisco IOS XE</td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">ISR / ASR Router</td>
+                <td>IP Address</td>
+                <td>Cisco IOS XE / IOS XR</td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">Secure Firewall</td>
+                <td>IP, Ports, and Applications</td>
+                <td>Cisco FTD (Firepower Threat Defense)</td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">Access Point</td>
+                <td>Radio Frequency / MAC</td>
+                <td>Cisco IOS XE / Meraki Cloud</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>      
+</body>
+</html>
